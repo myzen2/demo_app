@@ -32,6 +32,9 @@ Rails.application.configure do
   # Raises helpful error messages.
   config.assets.raise_runtime_errors = true
 
+  # Configuration I18n by svenfuchs
+  # config.i18n.available_locales = :fr
+
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
 end

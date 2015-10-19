@@ -13,3 +13,80 @@
  *= require_tree .
  *= require_self
  */
+h1 {
+	text-align: center;
+	margin-bottom: 40%;
+	background-color: pink;
+	color-font: #55BBFF;
+}
+
+.field {
+	text-align: center;
+	font-size: 20px;
+}
+
+h2 {
+	text-align: center;
+	color: #479CE1;
+	background-color: #ffffff;
+}
+
+#bouton {
+	background-color: #F6F6F6;
+	color: #ffffff;
+}
+
+.field {
+	text-align: center;
+	font-size: 24px;
+	background-color: #F6F6F6;
+	padding: 20px;
+	width: 100%;
+}
+
+.actions{
+	text-align: center;
+}
+
+.link {
+	text-align: center;
+}
+
+.email {
+	font-size: 24px;
+	width: 100%;
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+
+#notice {
+	text-align: center;
+	font-size: 20px;
+}
+
+form {
+	text-align: center;
+}
+
+.informations {
+	text-align: center;
+	font-size: 24px;
+	background-color: #F6F6F6;
+	padding: 20px;
+	width: 100%;
+}
+
+.date {
+	text-align: center;
+}
+.field_with_errors {
+	text-align: center;
+}
+
+#error_explanation {
+	text-align: center;
+}
+
+table {
+	margin-top: 5%; 
+}

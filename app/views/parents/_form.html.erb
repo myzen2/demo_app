@@ -1,7 +1,7 @@
 <%= form_for(@parent) do |f| %>
   <% if @parent.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(@parent.errors.count, "error") %> prohibited this parent from being saved:</h2>
+      <h2><%= pluralize(@parent.errors.count, "erreur(s).") %> Veuillez vérifier le(s) champ(s) suivant(s) :</h2>
 
       <ul>
       <% @parent.errors.full_messages.each do |message| %>
@@ -13,22 +13,22 @@
 
   <div class="field">
     <%= f.label :nom %><br>
-    <%= f.text_field :nom %>
+    <%= f.text_field :nom, placeholder: 'Nom' %>
   </div>
   <div class="field">
-    <%= f.label :prenom %><br>
-    <%= f.text_field :prenom %>
+    <%= f.label :prénom %><br>
+    <%= f.text_field :prenom, placeholder: 'Prénom' %>
   </div>
   <div class="field">
     <%= f.label :date_de_naissance %><br>
-    <%= f.date_select :date_de_naissance %>
+    <%= f.date_select :date_de_naissance, { start_year: 1920, end_year: 2000 } %>
   </div>
   <div class="field">
     <%= f.label :adresse %><br>
     <%= f.text_field :adresse %>
   </div>
   <div class="field">
-    <%= f.label :telephone %><br>
+    <%= f.label :téléphone %><br>
     <%= f.text_field :telephone %>
   </div>
   <div class="actions">

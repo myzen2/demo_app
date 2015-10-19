@@ -1,19 +1,21 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Nom:</strong>
-  <%= @enfant.nom %>
-</p>
+	<table class="table table-bordered">
+	  <thead>
+	  	<tr>
+			<th><strong>Nom :</strong></th>	
+			<th><strong>Prénom :</strong></th>
+			<th><strong>Date de naissance :</strong></th>
+		</thead>
 
-<p>
-  <strong>Prenom:</strong>
-  <%= @enfant.prenom %>
-</p>
+		<tbody>
+			<tr>
+			<td><%= @enfant.date_de_naissance %></td>
+			<td><%= @enfant.prenom %></td>
+			<td><%= @enfant.nom %></td>
+		</tr>
+		</tbody>
+	</table>
 
-<p>
-  <strong>Date de naissance:</strong>
-  <%= @enfant.date_de_naissance %>
-</p>
-
-<%= link_to 'Edit', edit_enfant_path(@enfant) %> |
-<%= link_to 'Back', enfants_path %>
+<%= link_to 'Modifier', edit_enfant_path(@enfant) %> |
+<%= link_to 'Retour', enfants_path %>

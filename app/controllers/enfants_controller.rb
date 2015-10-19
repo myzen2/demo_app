@@ -14,7 +14,7 @@ class EnfantsController < ApplicationController
 
   # GET /enfants/new
   def new
-    @enfant = Enfant.new
+    @enfant = Enfant.new(date_de_naissance: Time.zone.parse("01-01-2012").to_date)
   end
 
   # GET /enfants/1/edit

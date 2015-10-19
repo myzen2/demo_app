@@ -14,7 +14,7 @@ class ParentsController < ApplicationController
 
   # GET /parents/new@user = User.new
   def new
-    @parent = Parent.new(date_de_naissance: Time.zone.parse("01-01-2007").to_date)
+    @parent = Parent.new(date_de_naissance: Time.zone.parse("01-01-1960").to_date)
   end
 
   # GET /parents/1/edit

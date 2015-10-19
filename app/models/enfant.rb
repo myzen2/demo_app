@@ -1,4 +1,5 @@
 class Enfant < ActiveRecord::Base
+	
 	validates :nom, presence: true, length: {maximum: 50}
 	validates :prenom, presence: true, length: {maximum: 50}
 

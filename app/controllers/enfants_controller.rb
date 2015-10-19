@@ -4,12 +4,13 @@ class EnfantsController < ApplicationController
   # GET /enfants
   # GET /enfants.json
   def index
-    @enfants = Enfant.all
+    @enfant = Enfant.find(params[:id]) 
   end
 
   # GET /enfants/1
   # GET /enfants/1.json
   def show
+    @enfants = Enfant.all
   end
 
   # GET /enfants/new
@@ -28,7 +29,8 @@ class EnfantsController < ApplicationController
 
     respond_to do |format|
       if @enfant.save
-        format.html { redirect_to @enfant, notice: 'Enfant was successfully created.' }
+        # { redirect_to @enfant, notice: 'Enfant was successfully created.' }
+        format.html { redirect_to :controller => 'pages', :action => 'dashboard', notice: 'Enfant was successfully created.' }
         format.json { render :show, status: :created, location: @enfant }
       else
         format.html { render :new }

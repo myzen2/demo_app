@@ -1,4 +1,6 @@
 class Parent < ActiveRecord::Base
+
+	has_many :enfants
  
   validates :nom, presence: true, length: {maximum: 50}
   validates :prenom, presence: true, length: {maximum: 50}
